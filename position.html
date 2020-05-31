@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Position</title>
+	<style>
+	
+	body
+	{
+		margin: 0;
+	}
+	
+	.sun
+	{
+		background-color: yellow;
+		width: 20vw;
+		height: 20vw;
+		border-radius: 50%;
+		position: fixed;
+		bottom: 10vw;
+		left: 20%;
+	}
+	
+	.grass
+	{
+		background-color: green;
+		width: 100%;
+		height: 20vw;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+	}
+	
+	.sky
+	{
+		background-color: blue;
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+	
+	</style>
+	
+</head>
+
+<body>
+	<div class="sun"></div>
+	<div class="grass"></div>
+	<div class="sky"></div>
+</body>
+
+</html>
