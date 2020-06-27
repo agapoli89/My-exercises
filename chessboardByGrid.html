@@ -1,0 +1,78 @@
+<!-- inspired by: https://www.youtube.com/watch?v=DDyZci1h8K0 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Chessboard by Grid</title>
+
+<style>
+
+body
+{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section
+{
+	height: 50vw;
+	width: 50vw;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+}
+
+div
+{
+	background-color: white;
+}
+
+div:nth-child(even)
+{
+	background-color: black;
+	background-color: black;
+}
+
+</style>
+
+</head>
+
+<body>
+	<section>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</section>
+</body>
+
+</html>
