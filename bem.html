@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>BEM</title>
+	
+	<meta name="description" content="Attempt to use BEM" />
+	<link rel="stylesheet" href="bem.css" type="text/css">
+</head>
+
+<body class="page">
+	<header class="header page_header">
+		<p class="header__slogan header__slogan--big">Slogan Duży</p>
+		<p class="header__slogan header__slogan--small">Slogan mały</p>
+		<button class="button header__btn">Wejdź</button>
+	</header>
+	
+	<nav class="menu page_nav">
+		<img class="menu__logo" src="logo_bem.jpg" alt="logo">
+		<span class="menu__company-name">Nazwa firmy</span>
+		
+		<ul class="menu__items-list">
+			<li class="menu__item">File</li>
+			<li class="menu__item manu__item--active">Edit</li>
+			<li class="menu__item">View</li>
+			<li class="menu__item">Help</li>
+		</ul>
+	</nav>
+	
+	<section class="articles page__articles">
+		<form class="search">
+			<input type="text" class="search__text">
+			<button class="button search__btn">Szukaj</button>
+		</form>
+		
+		<article class="article">
+			<h1 class="article__header">Tytuł artykułu</h1>
+			<p class="article__info">Data publikacji 29.06.2020 Autor: Jan Nowak</p>
+			<p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec massa augue, tristique eget magna non, congue maximus justo. Mauris fringilla odio a condimentum tincidunt. Cras luctus tellus ac tincidunt vulputate. Cras accumsan risus vel elit aliquet posuere. Morbi sed auctor orci. Aliquam eu neque quis velit mattis faucibus. Vivamus facilisis pellentesque diam eget tincidunt. Etiam libero nibh, interdum eget condimentum a, porttitor quis turpis. Duis vulputate ex eget enim viverra, nec rutrum arcu blandit. Maecenas tincidunt purus lectus, ultricies congue ligula convallis fringilla. Aliquam placerat, sapien vitae aliquam lobortis, massa ante consequat quam, et lacinia lorem dolor ut risus.</p>
+			<button class="button article__btn">Czytaj dalej</button>
+		</article>
+		
+		<article class="article">
+			<h1 class="article__header">Tytuł artykułu</h1>
+			<p class="article__info">Data publikacji 29.06.2020 Autor: Agnieszka Polińska</p>
+			<p class="article__text">Ut mattis egestas nibh, nec viverra mi. Phasellus placerat elementum felis. Suspendisse sed accumsan urna. Curabitur hendrerit, nulla eu condimentum placerat, ipsum massa suscipit mauris, eu gravida ex ex vel purus. Aliquam erat volutpat. Sed ut dolor tristique felis sollicitudin ullamcorper. Nam pharetra purus eu leo vestibulum ultricies. Ut in convallis magna. Cras malesuada porta tortor ornare gravida. Curabitur et massa justo. Nulla facilisi. Etiam laoreet lorem neque, pretium rhoncus tortor tempor sed. Donec molestie bibendum nibh sit amet vehicula.</p>
+			<button class="button article__btn">Czytaj dalej</button>
+		</article>
+		
+		<article class="article">
+			<h1 class="article__header">Tytuł artykułu</h1>
+			<p class="article__info">Data publikacji 29.06.2020 Autor: Łukasz Musiał</p>
+			<p class="article__text">Morbi porttitor nibh at augue gravida facilisis id non leo. Phasellus non cursus risus. Nulla feugiat felis elit, ut ultricies dui hendrerit in. Fusce elementum fringilla turpis vel fringilla. Etiam vestibulum leo vel neque eleifend, eget imperdiet eros volutpat. Sed vel erat vitae sapien sodales mattis sit amet at turpis. Cras commodo tortor quis hendrerit imperdiet. Praesent viverra dolor a iaculis malesuada. Vestibulum eu ante consectetur, finibus quam non, venenatis diam. Donec sit amet nisl eget tortor consectetur elementum. Mauris vel magna a orci luctus dapibus. Mauris placerat sapien volutpat purus varius, eget semper nunc fringilla. Duis nec massa vestibulum, varius augue ac, aliquam lacus.</p>
+			<button class="button article__btn">Czytaj dalej</button>
+		</article>
+	</section>
+	
+	<footer class="footer page__footer">
+		<p class="footer__copyright">Copyright</p>
+		<p class="footer__adress">- Adres</p>
+	</footer>
+
+</body>
