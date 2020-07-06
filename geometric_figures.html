@@ -27,9 +27,20 @@
 		flex-wrap: wrap;
 	}
 	
-	h1 {
+	.header {
 		margin: 50px;
 		font-size: 50px;
+		display: flex;
+		align-items: center;
+	}
+	
+	.header::before,
+	.header::after {
+		content: "";
+		border: 1px solid #000;
+		flex-grow: 1;
+		width: 250px;
+		margin: 0 30px;
 	}
 	
 	.container {
@@ -38,6 +49,31 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		align-content: center;
+		border: 2px solid #000;
+		position: relative;
+	}
+	
+	.container::before {
+		content: "";
+		height: 2px;
+		width: 800px;
+		background-color: grey;
+		position: absolute;
+		top: -2px;
+		box-shadow: 0 602px 0 grey;
+	}
+	
+	.container::after {
+		content: "";
+		width: 2px;
+		height: 400px;
+		background-color: grey;
+		position: absolute;
+		right: -2px;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		box-shadow: -1138px 0 0 grey;
 	}
 	
 	.square {
@@ -194,7 +230,7 @@
 </head>
 
 <body>
-<header><h1>Geometric Figures</h1></header>
+<header><h1 class="header">Geometric Figures</h1></header>
 
 <main class="container">
 <div class="square"></div>
