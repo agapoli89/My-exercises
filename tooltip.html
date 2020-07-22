@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>	Tooltip</title>
+	
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		
+		body {
+			height: 100vh;
+			line-height: 24px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+
+		  
+		[data-title] {
+			border-bottom: 2px dotted #444;
+			position: relative;
+		}
+		
+		[data-title]:hover::after {
+			content: attr(data-title);
+			background-color: yellow;
+			position: absolute;
+			top: -75px;
+			left: 30px;
+			border-radius: 20%;
+			padding: 20px;
+			width: 100px;
+			text-align: center;
+		}
+	
+		[data-title]:hover::before {
+			content:"";
+			border-top: 10px solid yellow;
+			border-left: 20px solid transparent;
+			border-right: 20px solid transparent;
+			position: absolute;
+			top: -12px;
+			left: 50px
+		}
+		
+	</style>
+</head>
+
+<body>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et nulla id odio iaculis molestie a id lorem. Mauris a metus ut erat mollis volutpat sed sed metus. Phasellus sed felis justo. Quisque et scelerisque sem, eget sagittis nunc. Aliquam facilisis, magna nec commodo congue, lorem diam placerat metus, non aliquet felis nunc sed enim. Integer porta fermentum nisl, nec varius sem feugiat at. Quisque in turpis imperdiet, laoreet dolor eget, imperdiet nulla. Praesent vel ex mi. Vivamus orci nisi, auctor a efficitur quis, luctus vitae leo. <span data-title="My tooltip">Etiam non rhoncus arcu.</span> Proin lobortis facilisis lectus, rhoncus eleifend sem posuere eget. In a tellus sagittis leo elementum tincidunt. Suspendisse potenti. Fusce elementum nisi vitae neque congue cursus. Fusce fermentum commodo nunc.
+
+Nullam maximus arcu ligula, vitae tristique ex cursus eget. Duis accumsan consequat elit id facilisis. Nulla rutrum quis sem vel vehicula. In condimentum sollicitudin rutrum. Nunc euismod pellentesque consectetur. Phasellus non tincidunt ex. Maecenas eu bibendum mi. Maecenas auctor mi quam, eget imperdiet velit ultricies vel. Cras sit amet libero diam.
+
+Aliquam lacinia lectus a magna porta commodo. Aenean imperdiet risus id sagittis hendrerit. Donec eget condimentum ante. Sed mollis turpis eu lorem posuere efficitur. Duis sed sapien feugiat, hendrerit nisl nec, imperdiet purus. Duis velit risus, mattis ut elementum eget, suscipit sed nisl. Etiam pellentesque urna eget nisi aliquam, vel porta mi luctus. Etiam nunc neque, molestie non cursus at, gravida a sapien. Nulla elementum metus et gravida feugiat. Aenean tincidunt purus at dui fermentum, ac auctor ex maximus. Nam condimentum, ligula id ultricies mattis, diam nunc pharetra mi, eu ornare urna mauris a magna. Pellentesque dignissim turpis ut urna mollis, in rutrum enim semper. Nunc sodales, lectus in posuere lacinia, dui massa bibendum ligula, non aliquet arcu ligula non metus. Duis bibendum neque arcu, ac vulputate eros bibendum sit amet</p>	
+
+</body>
+</html>
